@@ -854,14 +854,10 @@
       );
 
     });
-
+    
     // 페이지가 열리면 model 폴더에서 AI 모델 자동 연결
-    window.addEventListener("DOMContentLoaded", () => {
-
-      $("modelUrl").value = "./model/";
-
-      $("loadBtn").click();
-
+    $("modelUrl").value = "./model/";
+    loadModel();
     });
 
   </script>
